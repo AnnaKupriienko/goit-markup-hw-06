@@ -41,6 +41,7 @@ ol {
 .container {
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
 .section {
@@ -221,6 +222,7 @@ ol {
     fill: #f4f4fd;
 }
 /* ====== HEADER MOBILE STYLES ===== /*/
+
 /* ====== HERO MOBILE ===== */
 .hero {
     padding-top: 72px;
@@ -271,6 +273,7 @@ ol {
     color: #FFFFFF;
 }
 /* ====== HERO MOBILE===== /*/
+
 /* ====== FEATURES STYLES ===== */
 .features-icon{
     display: none;
@@ -280,7 +283,6 @@ ol {
     flex-direction: column;
     gap: 72px;
 }
-
 .features-title {
     font-size: 36px;
     font-weight: 700;
@@ -289,6 +291,7 @@ ol {
     text-transform: capitalize;
     color: #2E2F42;
     margin-bottom: 8px;
+    text-align: center;
 }
 .features-list-text {
     font-size: 16px;
@@ -298,13 +301,21 @@ ol {
     color: #434455;
     max-width: 288px;
 }
-/* ====== FEATURES STYLES ===== /*/
+/* ====== FEATURES MOBILE STYLES ===== /*/
 
-/* ====== HEADER TABLET STYLES ===== */
-@media screen and (min-width: 768px) and (max-width:1157px) {
+ /*====== TEAM TABLET STYLES====== */
+
+
+
+ /*====== TEAM TABLET STYLES====== /*/
+
+
+
+@media screen and (min-width: 768px) {
     .container {
         width: 766px;
     }
+ /* ====== HEADER TABLET STYLES ===== */
     .mobile-menu {
             display: none;
         }
@@ -320,6 +331,7 @@ ol {
      display: flex;
     }
         .page-header {
+        padding: 0;
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),0px 1px 1px 0px rgba(46, 47, 66, 0.16),0px 2px 1px 0px rgba(46, 47, 66, 0.08);
         }
@@ -417,25 +429,50 @@ ol {
         .menu-link,
         .contact-link {
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        } 
+        /* ====== HEADER TABLET STYLES ===== /*/
+
+        /*====== HERO TABLET STYLES ======*/
+        .main-title{
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        width: 736px;
         }
-        /* FEATURES STYLES */
+        .title-for {
+         text-transform:none;
+                }
+        
+        /*====== HERO TABLET STYLES====== /*/
+
+        /*====== FEATURES TABLET STYLES ======*/
+        .features-title {
+        text-align: start;
+        }
        .features-list{
         display: flex;
         flex-direction: row;
-        gap: 24px;
+        gap: 72px 24px;
         flex-wrap: wrap;
        }
        .features-link{
         width: calc((100% - 24px) / 2);
        }
-}
-/* ====== HEADER TABLET STYLES ===== /*/
+        /*====== FEATURES TABLET STYLES====== /*/
+
+        /*====== TEAM TABLET STYLES====== */
+
+
+
+        /*====== TEAM TABLET STYLES====== /*/
+           }
+     
+
 /* ====== HEADER DESKTOP STYLES ===== */
 @media screen and (min-width:1158px) {
     .container {
         width: 1158px;
     }
- 
     .page-header {
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
@@ -456,6 +493,9 @@ ol {
         color: #434455;
         padding: 24px 0;
     }
+     /* ====== HEADER DESKTOP STYLES ===== /*/
+
+    /* ====== HERO DESKTOP STYLES ===== */
         .main-title {
         font-size: 56px;
         font-weight: 700;
@@ -467,22 +507,16 @@ ol {
         margin-left: auto;
         margin-right: auto;
 }
-.features-icon{
-    display:flex;
-}
-.icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #F4F4FD;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    height: 112px;
-    margin-bottom: 8px;
-}
+/* ====== HERO DESKTOP STYLES ===== /*/
 
+/* ====== FEATURES DESKTOP STYLES ===== */
+.features-icon{
+    display: flex;
+}
 .features-list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 24px;
 }
@@ -495,6 +529,7 @@ ol {
     color: #2E2F42;
     margin-bottom: 8px;
 }
+
 .features-list-text {
     font-size: 16px;
     font-weight: 400;
@@ -503,5 +538,16 @@ ol {
     color: #434455;
     max-width: 264px;
 }
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
 }
-/* ====== HEADER DESKTOP STYLES ===== /*/
+/* ====== FEATURES DESKTOP STYLES ===== /*/
+}
