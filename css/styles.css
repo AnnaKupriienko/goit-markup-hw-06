@@ -477,6 +477,7 @@ flex-wrap: nowrap;
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
+    text-align: left;
 }
 
 .link-footer {
@@ -493,20 +494,12 @@ flex-wrap: nowrap;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
-
-.page-footer-container {
-    margin-right: 120px;
+    text-align: center;
 }
 
 .footer-social-list {
     display: flex;
+    justify-content:center;
     gap: 16px;
 }
 
@@ -514,7 +507,6 @@ flex-wrap: nowrap;
     width: 40px;
     height: 40px;
 }
-
 .footer-social-link {
     display: flex;
     width: 100%;
@@ -534,11 +526,21 @@ flex-wrap: nowrap;
 .footer-social-icon {
     fill: #f4f4fd;
 }
-
-.footer-social-container {
-    margin-right: 80px;
+.page-footer-container{
+    text-align: center;
 }
-
+.footer-social-container {
+    margin-top: 72px ;
+margin-bottom: 72px;
+}
+.subcribe-form{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.title-sub{
+    text-align: center;
+}
 .icon-btn-sub {
     fill: #FFFFFF;
 }
@@ -547,7 +549,7 @@ flex-wrap: nowrap;
     display: inline-flex;
     justify-content: center;
     padding: 8px 24px;
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     align-items: center;
     font-family: Roboto, sans-serif;
@@ -561,6 +563,8 @@ flex-wrap: nowrap;
     background-color: #4D5AE5;
     border-radius: 4px;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sub-btn:hover,
