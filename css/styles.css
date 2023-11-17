@@ -87,7 +87,6 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    margin-right: 76px;
 }
 .logotype-word {
     font-family: Raleway, sans-serif;
@@ -130,6 +129,9 @@ ol {
 }
 .mobile-container {
     position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    padding-left: 16px;
 }
 .mobile-close-btn {
     display: block;
@@ -146,9 +148,7 @@ ol {
     height: 24px;
     border: 1px solid #E7E9FC;
 }
-.mobile-menu-list {
-    margin-top: 72px;
-}
+
 .mobile-menu-link {
     font-size: 36px;
     font-weight: 700;
@@ -169,28 +169,34 @@ ol {
     display: block;
     margin-bottom: 0px;
 }
-.mobile-menu-nav {
-    display: flex;
-}
+
 .mobile-contacts {
-    font-style: normal;
+   font-style: normal;
     margin-top: 168px;
+}
+.mobile-contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 .mobile-contact-link {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #434455;
-    display: block;
-    margin-bottom: 24px;
+    color:#434455;
+}
+.mobile-link{
+    color: #4D5AE5;
+}
+.link-studio{
+    color:#4D5AE5 ;
 }
 .mobile-menu-social-list {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-top: 48px;
-    margin-bottom: 40px;
 }
 .mobile-menu-social-item {
     width: 40px;
@@ -232,6 +238,7 @@ ol {
 .hero {
     padding-top: 72px;
     padding-bottom: 200px;
+    min-width:320px;
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-image.jpg);
     background-size: cover;
@@ -280,6 +287,10 @@ ol {
 /* ====== HERO MOBILE===== /*/
 
 /* ====== FEATURES STYLES ===== */
+.features{
+    padding-top: 82px;
+    padding-bottom: 96px;
+}
 .features-icon{
     display: none;
 }
@@ -311,6 +322,8 @@ ol {
  /*====== TEAM MOBILE STYLES====== */
 .team {
     background-color: #F4F4FD;
+    padding-top:96px;
+padding-bottom: 96px;
 }
 .team-title {
     font-size: 36px;
@@ -337,6 +350,12 @@ flex-wrap: nowrap;
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+.container-team-list{
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
 .team-list-title {
     font-size: 20px;
     font-weight: 500;
@@ -344,7 +363,6 @@ flex-wrap: nowrap;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-    margin-bottom: 8px;
 }
 .team-list-text {
     font-size: 16px;
@@ -354,15 +372,10 @@ flex-wrap: nowrap;
     text-align: center;
     color: #434455;
 }
-.container-team {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 .social-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 8px;
 }
 .social-item {
     width: 40px;
@@ -396,6 +409,13 @@ flex-wrap: nowrap;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.portfolio{
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .portfolio-title {
     font-size: 36px;
@@ -419,7 +439,6 @@ flex-wrap: nowrap;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-bottom: 8px;
 }
 .portfolio-list-text {
     font-size: 16px;
@@ -462,10 +481,9 @@ flex-wrap: nowrap;
  /*====== FOOTER MOBILE STYLES====== */
 .page-footer {
     background-color: #2e2f42;
-    padding-top: 100px;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
-
 .logotype-word-footer {
     color: #F4F4FD;
 }
@@ -933,6 +951,9 @@ fill: #4D5AE5;
         /* ====== HEADER TABLET STYLES ===== /*/
 
         /*====== HERO TABLET STYLES ======*/
+        .hero{
+            min-width: 768px;
+        }
         .main-title{
         font-size: 56px;
         line-height: 1.07;
@@ -980,14 +1001,17 @@ fill: #4D5AE5;
 .page-footer-container{
     text-align: left;
 }
+.page-footer{
+    padding-bottom: 0;
+}
 .footer-container{
     display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: inherit;
-        gap: 24px;
-        padding: 0 108px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: inherit;
+    gap: 24px;
+    padding: 96px 108px;
     }
 .footer-social-text{
     text-align: left;
@@ -1001,6 +1025,9 @@ fill: #4D5AE5;
 .subcribe-form{
     flex-direction: row;
     row-gap:48px ;
+}
+.footer-social-container {
+    margin-top: 0;
 }
  
 /* ======FOOTER TABLET STYLES====== */
@@ -1040,6 +1067,9 @@ min-height: 584px;
      /* ====== HEADER DESKTOP STYLES ===== /*/
 
     /* ====== HERO DESKTOP STYLES ===== */
+    .hero{
+        max-width: 1440px;
+    }
         .main-title {
         font-size: 56px;
         font-weight: 700;
