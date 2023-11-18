@@ -129,9 +129,10 @@ ol {
 }
 .mobile-container {
     position: relative;
-    padding-top: 72px;
-    padding-bottom: 40px;
-    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap:168px;
+    padding: 72px 24px 40px 16px;
 }
 .mobile-close-btn {
     display: block;
@@ -148,6 +149,16 @@ ol {
     height: 24px;
     border: 1px solid #E7E9FC;
 }
+.social-mobile-container{
+display: flex;
+flex-direction: column;
+gap: 48px;
+}
+.mobile-menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .mobile-menu-link {
     font-size: 36px;
@@ -156,8 +167,6 @@ ol {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
-    display: block;
-    margin-bottom: 40px;
 }
 .mobile-meni-link-contact {
     font-size: 36px;
@@ -172,7 +181,6 @@ ol {
 
 .mobile-contacts {
    font-style: normal;
-    margin-top: 300px;
 }
 .mobile-contact-list{
     display: flex;
@@ -196,7 +204,6 @@ ol {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 48px;
 }
 .mobile-menu-social-item {
     width: 40px;
@@ -1069,6 +1076,8 @@ min-height: 584px;
     /* ====== HERO DESKTOP STYLES ===== */
     .hero{
         max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
         .main-title {
         font-size: 56px;
